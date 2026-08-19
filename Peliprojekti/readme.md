@@ -1,1 +1,1 @@
-Ohjelmisto 1 peli Eino Ojala
+Ohjelmisto1 Projektipeli Eino Ojala
