@@ -1,12 +1,12 @@
 luvut = []
 
 while True:
-    syote = input("Anna luku: ")
+    arvo = input("Anna luku: ")
 
-    if syote == "":
+    if arvo == "":
         break
 
-    luvut.append(float(syote))
+    luvut.append(float(arvo))
 
 print("Pienin luku:", min(luvut))
 print("Suurin luku:", max(luvut))
