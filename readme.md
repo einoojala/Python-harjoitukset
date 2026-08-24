@@ -1,4 +1,4 @@
-# Ohjelmisto 1 - Python harjoitukset:
+# Ohjelmisto 1 - Python harjoitukset
 
 Eino Ojala
 
@@ -19,5 +19,25 @@ Tein tehtävät: 1, 2, 3 ja 4
 Tein tehtävät: 1, 2, 3, 4, 5 ja 6
 
 # Moduuli 6
+
+Tein tehtävät: 1, 2, 3 ja 4
+
+# Moduuli 7
+
+Tein tehtävät:
+
+# Moduuli 8
+
+Tein tehtävät:
+
+# Moduuli 9
+
+Tein tehtävät:
+
+# Moduuli 10
+
+Tein tehtävät:
+
+# Moduuli 11
 
 Tein tehtävät:
