@@ -1,5 +1,5 @@
 import random
-tahkot = int(input("Anna tahkot: "))
+tahkot = int(input("Anna tahkojen määrä: "))
 
 def noppa(tahkot):
     luku = random.randint(1, tahkot)
