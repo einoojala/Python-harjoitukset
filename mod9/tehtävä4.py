@@ -1,7 +1,6 @@
 import random
 
 class Auto:
-
     def __init__(self, rekisteritunnus, nykyinen_nopeus):
         self.rekisteritunnus = rekisteritunnus
         self.huippunopeus = random.randint(100, 200)

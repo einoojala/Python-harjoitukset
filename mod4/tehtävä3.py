@@ -1,5 +1,5 @@
 sukupuoli = input("Anna sukupuoli: ")
-hemoglobiini = float(input("Anna hemoglobiini: "))
+hemoglobiini = float(input("Anna hemoglobiini arvo: "))
 
 if sukupuoli == "mies" and 134 <= hemoglobiini <= 195:
     print("Hemoglobiini on normaali")

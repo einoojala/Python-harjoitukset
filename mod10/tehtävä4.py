@@ -1,7 +1,6 @@
 import random
 
 class Auto:
-
     def __init__(self, rekisteritunnus, nykyinen_nopeus):
         self.rekisteritunnus = rekisteritunnus
         self.huippunopeus = random.randint(100, 200)
@@ -21,7 +20,6 @@ class Auto:
         self.kuljettu_matka += aika * self.nykyinen_nopeus
 
 class Kilpailu:
-
     def __init__(self, kilpailun_nimi, pituus_km, autot):
         self.kilpailun_nimi = kilpailun_nimi
         self.pituus_km = pituus_km
