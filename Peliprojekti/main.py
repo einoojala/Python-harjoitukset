@@ -41,7 +41,7 @@ def nayta_ohjeet():
     print("Lopulta sinun täytyy löytää oven koodi.")
     
 print("================================")
-print("       VIIMEINEN TODISTAJA")
+print("       MURHA KARTANOSSA")
 print("================================")
 
 nimi = input("Mikä sinun nimesi on? ")
