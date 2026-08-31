@@ -16,7 +16,7 @@ def nayta_inventaario():
 
 def nayta_epaillyt():
     print("\n--- EPÄILLYT ---")
-    print("1. Helena Kivi - Edvardin vaimo")
+    print("1. Elisa Kivi - Edvardin vaimo")
     print("2. James Kivi - Edvardin veli")
     print("3. Sofia Niemi - Edvardin sihteeri")
     print("4. Viktor Salonen - Edvardin liikekumppani")
