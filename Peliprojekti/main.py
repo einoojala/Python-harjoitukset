@@ -39,61 +39,64 @@ def nayta_ohjeet():
     print("Tutki epäiltyjä ja heidän kertomuksiaan.")
     print("Ratkaise arvoituksia ja selvitä murhaajan henkilöllisyys.")
     print("Lopulta sinun täytyy löytää oven koodi.")
-    
+
 print("================================")
 print("       MURHA KARTANOSSA")
 print("================================")
 
 nimi = input("Mikä sinun nimesi on? ")
-ika = int(input("Kuinka vanha olet? "))
 
-if ika < 12:
-    print("\nOlet liian nuori pelaamaan tätä peliä.")
-    print("Peli suljetaan.")
+while True:
+    try:
+        ika = int(input("Kuinka vanha olet? "))
+        break
+    except ValueError:
+        print("Anna ikä numerona.")
 
-else:
-    print(f"\nTervetuloa, {nimi}!")
-    print("Olet saapunut vanhaan Kiven kartanoon.")
-    print("Edvard Kivi on kuollut.")
-    print("Sinun tehtäväsi on selvittää, mitä tapahtui.")
 
-    inventaario = []
+print(f"\nTervetuloa, {nimi}!")
+print("Olet saapunut vanhaan Kiven kartanoon.")
+print("Edvard Kivi on kuollut.")
+print("Sinun tehtäväsi on selvittää, mitä tapahtui.")
 
-    while True:
+inventaario = []
 
-        print("\n================================")
-        print("          PÄÄVALIKKO")
-        print("================================")
-        print("1. Tutki huonetta")
-        print("2. Kerää esine")
-        print("3. Katso inventaario")
-        print("4. Tutki epäiltyjä")
-        print("5. Ohjeet")
-        print("6. Lopeta")
-        print("================================")
 
-        komento = input("Valitse toiminto: ")
+while True:
 
-        if komento == "1":
-            tutki_huonetta()
+    print("\n================================")
+    print("          PÄÄVALIKKO")
+    print("================================")
+    print("1. Tutki huonetta")
+    print("2. Kerää esine")
+    print("3. Katso inventaario")
+    print("4. Tutki epäiltyjä")
+    print("5. Ohjeet")
+    print("6. Lopeta")
+    print("================================")
 
-        elif komento == "2":
-            lisaa_esine()
+    komento = input("Valitse toiminto: ")
 
-        elif komento == "3":
-            nayta_inventaario()
+    if komento == "1":
+        tutki_huonetta()
 
-        elif komento == "4":
-            nayta_epaillyt()
+    elif komento == "2":
+        lisaa_esine()
 
-        elif komento == "5":
-            nayta_ohjeet()
+    elif komento == "3":
+        nayta_inventaario()
 
-        elif komento == "6" or komento.lower() == "lopeta":
-            print("\nPeli lopetetaan.")
-            print(f"Kiitos pelaamisesta, {nimi}!")
-            break
+    elif komento == "4":
+        nayta_epaillyt()
 
-        else:
-            print("\nTuntematon komento.")
-            print("Valitse jokin valikon vaihtoehdoista.")
+    elif komento == "5":
+        nayta_ohjeet()
+
+    elif komento == "6" or komento.lower() == "lopeta":
+        print("\nPeli lopetetaan.")
+        print(f"Kiitos pelaamisesta, {nimi}!")
+        break
+
+    else:
+        print("\nTuntematon komento.")
+        print("Valitse jokin valikon vaihtoehdoista.")
