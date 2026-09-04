@@ -53,50 +53,52 @@ while True:
     except ValueError:
         print("Anna ikä numerona.")
 
+if ika < 12:
+    print("\nOlet liian nuori pelaamaan tätä peliä.")
+    print("Pelin ikäraja on 12 vuotta.")
+else:
+    print(f"\nTervetuloa, {nimi}!")
+    print("Olet saapunut vanhaan Kiven kartanoon.")
+    print("Edvard Kivi on kuollut.")
+    print("Sinun tehtäväsi on selvittää, mitä tapahtui.")
 
-print(f"\nTervetuloa, {nimi}!")
-print("Olet saapunut vanhaan Kiven kartanoon.")
-print("Edvard Kivi on kuollut.")
-print("Sinun tehtäväsi on selvittää, mitä tapahtui.")
+    inventaario = []
 
-inventaario = []
+    while True:
 
+        print("\n================================")
+        print("          PÄÄVALIKKO")
+        print("================================")
+        print("1. Tutki huonetta")
+        print("2. Kerää esine")
+        print("3. Katso inventaario")
+        print("4. Tutki epäiltyjä")
+        print("5. Ohjeet")
+        print("6. Lopeta")
+        print("================================")
 
-while True:
+        komento = input("Valitse toiminto: ")
 
-    print("\n================================")
-    print("          PÄÄVALIKKO")
-    print("================================")
-    print("1. Tutki huonetta")
-    print("2. Kerää esine")
-    print("3. Katso inventaario")
-    print("4. Tutki epäiltyjä")
-    print("5. Ohjeet")
-    print("6. Lopeta")
-    print("================================")
+        if komento == "1":
+            tutki_huonetta()
 
-    komento = input("Valitse toiminto: ")
+        elif komento == "2":
+            lisaa_esine()
 
-    if komento == "1":
-        tutki_huonetta()
+        elif komento == "3":
+            nayta_inventaario()
 
-    elif komento == "2":
-        lisaa_esine()
+        elif komento == "4":
+            nayta_epaillyt()
 
-    elif komento == "3":
-        nayta_inventaario()
+        elif komento == "5":
+            nayta_ohjeet()
 
-    elif komento == "4":
-        nayta_epaillyt()
+        elif komento == "6" or komento.lower() == "lopeta":
+            print("\nPeli lopetetaan.")
+            print(f"Kiitos pelaamisesta, {nimi}!")
+            break
 
-    elif komento == "5":
-        nayta_ohjeet()
-
-    elif komento == "6" or komento.lower() == "lopeta":
-        print("\nPeli lopetetaan.")
-        print(f"Kiitos pelaamisesta, {nimi}!")
-        break
-
-    else:
-        print("\nTuntematon komento.")
-        print("Valitse jokin valikon vaihtoehdoista.")
+        else:
+            print("\nTuntematon komento.")
+            print("Valitse jokin valikon vaihtoehdoista.")
